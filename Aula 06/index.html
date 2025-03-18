@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Desafio das mensagens</h1>
+    <br>
+    <h2>&#8594 Primeiro parágrafo</h2>
+    <h3>&#8594 &#8594 Primeiro parágrafo</h3>
+    <h4>&#8594 &#8594 &#9769 Primeiro parágrafo</h4>
+    <br>
+    <br>
+    <br>
+    <h4>&#8594 &#8594 &#9769 Primeiro parágrafo</h4>
+    <h3>&#8594 &#8594 Primeiro parágrafo</h3>
+    <h2>&#8594 Primeiro parágrafo</h2>
+    <br>
+    <br>
+    <br>
+    <h1>&#128508 &#128511 &#128514</h1>
+    <p>
+        <b>Miguel</b><u>Miguel</u>
+    </p>
+<h2>Principais formatações</h2>
+<p>
+    <b>Vasco da Gama</b> A cruz de malta
+    <br>
+    <strong>Vasco</strong> da Gama
+</p>
+<p>
+    <i>Vasco da Gama</i> Avante vasco
+    <br>
+    <em>Vasco</em>
+</p>
+<p>
+    <mark style="background-color: blue;">Vasco da Gama</mark>
+
+</p>
+<p style="font-size:150%;">This is a paragraph <small>Vasco</small>.</p>
+<h1 style="font-size:300%;">This is a heading</h1>
+<p>O <abbr title="Clube de Regatas Vasco da Gama">CRVG</abbr> foi fundado em 1898.</p>
+
+<del>Flamengo</del>
+
+<ins>Vasco</ins>
+
+<sub>2</sub>
+
+<sup>2</sup>
+
+<address>São Januario</address>
+
+<p>
+    <blockquote>
+        Vasco da Gama
+    </blockquote>
+</p>
+<h1>Lista </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre>
+    <code>
+        import cv2
+import numpy as np
+
+# Carregar a imagem
+imagem = cv2.imread('imagem.png')
+
+# Converter para escala de cinza
+gray = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
+
+# Aplicar um filtro de desfoque para suavizar as bordas
+imagem_suavizada = cv2.GaussianBlur(gray, (5, 5), 0)
+
+# Exibir a imagem original e a suavizada
+cv2.imshow("Imagem Original", imagem)
+cv2.imshow("Imagem Suavizada", imagem_suavizada)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+    </code>
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
